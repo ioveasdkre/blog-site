@@ -1,0 +1,41 @@
+# IDE/Editor
+.vscode
+.idea
+
+# Package Manager
+package.json
+package-lock.json
+yarn.lock
+
+# TypeScript-related
+tsconfig.json
+tsconfig.app.json
+tsconfig.spec.json
+
+# Angular-related
+**/assets/**/*
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# Ignore build output and node_modules
+build/
+dist/
+node_modules/
+
+# Ignore any Git or other version control folders
+.git/
+.hg/
+.svn/
