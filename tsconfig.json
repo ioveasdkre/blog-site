@@ -6,6 +6,11 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "esModuleInterop": true, //兼容模組導入的方式
+    "removeComments": true, // ts to js 時移除所有註解
+    "noEmitOnError": true, // 程式碼中存在任何類型檢查錯誤，編譯器將不會生成任何 JavaScript 文件
+    "noUnusedLocals": true, // 檢查未使用的區域變數
+    "noUnusedParameters": true, // 檢查函數中未使用的參數
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -22,7 +27,12 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

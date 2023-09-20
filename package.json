@@ -47,10 +47,10 @@
     "typescript": "~5.1.3"
   },
   "lint-staged": {
-    "*.{ts,js,vue}": [
+    "*.{ts,js}": [
       "eslint --fix"
     ],
-    "*.{html,scss,css,vue}": [
+    "*.{html,scss,css}": [
       "prettier --write",
       "stylelint --fix"
     ]

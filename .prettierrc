@@ -33,6 +33,18 @@
       "options": {
         "parser": "typescript"
       }
+    },
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "html"
+      }
+    },
+    {
+      "files": ["*.scss"],
+      "options": {
+        "parser": "scss"
+      }
     }
   ]
 }
